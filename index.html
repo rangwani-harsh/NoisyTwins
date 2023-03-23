@@ -270,10 +270,10 @@
         <div class="content">
           <h2 class="title is-3">Approach</h2>
           <p>
-            For the i <sup>th</sup> sample of class c <sup>i</sup>, we create twin augmentations (c&#771; <sup>i</sup> <sub>a</sub>, c&#771; <sup>i</sup> <sub>b</sub>), by sampling from a Gaussian
-            centered at class embedding (µ <sub>c</sub> <sup>i</sup>). After this, we concatenate them with the same z <sup>i</sup> and obtain (w&#771; <sub>a</sub> <sup>i</sup> , w&#771; <sup>i</sup> <sub>b</sub>) from the mapping network,
-            which we stack in batches of augmented latents (W&#771; <sub>A</sub> and W&#771; <sub>B</sub>). The twin (w&#771; <sub>a</sub> <sup>i</sup> , w&#771; <sub>b</sub> <sup>i</sup>) vectors are then made invariant to augmentations 
-            (similar) in the latent space by minimizing cross-correlation between the latents of two augmented batches (W&#771; <sub>A</sub> and W&#771; <sub>B</sub>).
+            For the i<sup>th</sup> sample of class c<sup>i</sup>, we create twin augmentations (c&#771;<sub>a</sub><sup>i</sup>, c&#771;<sub>b</sub><sup>i</sup>), by sampling from a Gaussian
+            centered at class embedding (µ<sub>c</sub><sup>i</sup>). After this, we concatenate them with the same z<sup>i</sup> and obtain (w&#771;<sub>a</sub><sup>i</sup> , w&#771;<sub>b</sub><sup>i</sup>) from the mapping network,
+            which we stack in batches of augmented latents (W&#771;<sub>A</sub> and W&#771;<sub>B</sub>). The twin (w&#771;<sub>a</sub><sup>i</sup>, w&#771;<sub>b</sub><sup>i</sup>) vectors are then made invariant to augmentations 
+            (similar) in the latent space by minimizing cross-correlation between the latents of two augmented batches (W&#771;<sub>A</sub> and W&#771;<sub>B</sub>).
           </p>
           <picture>
         <img src="assets/Approach.jpg" alt="Overview of NoisyTwins" style="width:auto;">
