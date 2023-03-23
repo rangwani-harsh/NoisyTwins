@@ -342,7 +342,10 @@
         <h2 class="title is-3"></h2>
         <div class="columns is-centered">
           <div class="column content">
-    
+            <p> We observe that the noise-only baseline suffers from the mode collapse and class confusion for tail categories as shown on (left). 
+              Despite this, it is found that the mean iFID based on Inception V3 shows a smaller value for StyleGAN2ADA+Noise, whereas a higher value for diverse and class-consistent NoisyTwins. 
+              Hence, this metric does not align with qualitative results. On the other hand, the proposed mean iFIDCLIP is lower for NoisyTwins, demonstrating its reliability.
+            </p>
       <picture>
           <img src="assets/Imagenet_LT_qualitative_2.jpg" alt="Imagenet_LT_2" style="width:auto;">
       </picture>
@@ -354,20 +357,31 @@
     
 
     <!-- Animation. -->
-<!--     <div class="columns is-centered">
+     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
- -->
+        <h2 class="title is-3">Few-Shot Results</h2>
+        
         <!-- Interpolating. -->
-<!--         <h3 class="title is-4">Interpolating states</h3>
+        <h3 class="title is-4">ImageNet Carnivore</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            Qualitative comparison on few-shot ImageNet Carnivores dataset
           </p>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
+        <picture>
+          <img src="assets/ImagenetCarnivore_qualitative.jpg" alt="ImagenetCarnivore" style="width:auto;">
+      </picture>
+         <h3 class="title is-4">Animal Faces</h3>
+        <div class="content has-text-justified">
+          <p>
+            Qualitative comparison on few-shot Animal Faces dataset
+          </p>
+        </div>
+        <picture>
+          <img src="assets/AnimalFace_qualitative.jpg" alt="AnimalFace" style="width:auto;">
+      </picture>
+       
+<!--         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
             <img src="./static/images/interpolate_start.jpg"
                  class="interpolation-image"
@@ -413,8 +427,8 @@
         </div>
         <!--/ Re-rendering. -->
 
-<!--       </div>
-    </div> --> -->
+      </div>
+    </div> 
     <!--/ Animation. -->
 
 
